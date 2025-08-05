@@ -37,6 +37,7 @@ services:
       MYSQL_PASSWORD: ${DB_PASSWORD}
       MYSQL_DATABASE: ${DB_DATABASE}
       MYSQL_ROOT_PASSWORD: ${DB_ROOT_PASSWORD}
+    command: --skip-grant-tables
     ports:
       - ${DB_PORT}
     networks:
